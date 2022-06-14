@@ -151,18 +151,18 @@ li {
     list-style: none;
     margin: 0px 0px;
 }
-#position {
+.position {
     text-decoration: underline;
     text-underline-offset: 2px;
     font-size: large;
     margin-bottom: -10px;
     margin-top: 10px;
 }
-#employer {
+.employer {
     text-indent: 40px;
     margin-top: 1px;
 }
-#responsibility {
+.responsibility {
     margin-left:  80px;
     margin-right: 80px;
     font-size: small;
