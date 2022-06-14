@@ -1,0 +1,187 @@
+
+@font-face {
+    font-family: 'ablation';
+    src: url(Ablation-Complete-Family/Ablation.otf);
+    font-style: normal;
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'ablation';
+    src: url(Ablation-Complete-Family/Ablation-Black.otf);
+    font-style: normal;
+    font-weight: 600;
+}
+body{
+    margin: 100px 100px;
+    height: 100%;
+    padding: 0;
+    font-family: ablation;
+    background: linear-gradient(-45deg, rgb(189, 194, 205), rgba(62, 109, 156, 0.791), rgb(46, 58, 94));
+    box-shadow: 20px 20px 20px 0px #545f70;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 300% 300%;
+    position: relative;
+    animation: change 6s ease-in-out infinite;
+}
+@keyframes change {
+    0%{background-position: 0 50%;
+    }
+    50%{background-position: 100% 50%;
+    }
+    100%{background-position: 0 50%;
+    }
+}
+#topsection {
+    background-color: #333E50;
+    text-align: center;
+    height: 160px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+#textsection {
+    background-color:whitesmoke;
+}
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;                        
+}
+#name {
+    text-decoration: none;
+    position: relative;
+    top: 35px;
+    font-size: 4em;
+    line-height: 1em;
+    letter-spacing: 5px;
+    color: transparent;
+    -webkit-text-stroke: 1px hsl(192, 29%, 97%);
+
+   /* font-weight: 1000;
+    font-size:2.5rem;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 5px;
+    color: whitesmoke; */
+}
+#name::before {
+    content: attr(text);
+    position: absolute;
+    color: var(--clr);
+    width: 0%;
+    overflow: hidden;
+    transition: 1.25s;
+    border-right: 4px solid var(--clr);
+}
+#name:hover::before {
+    width: 100%;
+    -webkit-text-stroke: 1px var(--clr);
+    filter: drop-shadow(0 0 25px var(--clr));
+}
+#email a{
+    text-decoration: none;
+    color: whitesmoke;
+    position: relative;
+    top: 50px;
+}
+#email a:hover {
+    text-decoration: underline;
+    color: #00ADE1;
+} 
+#intro {
+    margin: px 30px;
+    text-align: center;
+    font-style: italic;
+    padding-top: 25px;
+    padding-bottom: 20px;
+}
+.section-header {
+    position: relative;
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    font-size: 30px;
+    margin: 15px 50px;
+    top: 30px;
+    padding: 0px 10px
+    
+}
+.section-header:after {
+    content:"";
+    position: absolute;
+    background-color: #00ADE1;
+    height: 3px;
+    width: 0;
+    left: 0%;
+    bottom: -10px;
+    transition: .4s;
+}
+.section-header:hover:after{
+    width: 100%;
+}
+.skillslist {
+    font-weight: 50;
+    margin: 57px 60px 0px 30px;
+    padding: 4px 10px;
+    position: relative;
+    left: 30px;
+    top: -10px;
+    text-align: left;
+    line-height: 20px;
+    list-style-type: square;
+}
+footer {
+    margin: 0;
+    padding: 60px 0px 10px 0px;
+    background-color: whitesmoke;
+    text-align: center;
+    font-size: small;
+    font-style: italic;
+}
+#mm {
+    text-decoration: none;
+    color: black;
+}
+em {
+    font-size: smaller;
+}
+li {
+    list-style: none;
+    margin: 0px 0px;
+}
+#position {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-size: large;
+    margin-bottom: -10px;
+    margin-top: 10px;
+}
+#employer {
+    text-indent: 40px;
+    margin-top: 1px;
+}
+#responsibility {
+    margin-left:  80px;
+    margin-right: 80px;
+    font-size: small;
+    list-style-type: disc;
+    margin-bottom: -12px;
+    margin-top: -10px;
+}
+.social-icon {
+    color: #546165;
+    transition: color .5s;
+    font-size: 65px;
+    display: inline-block;
+    flex-direction: row;
+    width: 10%; 
+}    
+#icons {
+    text-align: center;
+    margin-top: 30px;
+}
+.social-icon:hover {
+    color: #00ADE1;
+}          
